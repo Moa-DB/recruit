@@ -1,0 +1,9 @@
+[submodule "recruitserver"]
+	path = recruitserver
+	url = https://github.com/Moa-DB/recruitserver
+[submodule "recruiter_client"]
+	path = recruiter_client
+	url = https://github.com/Moa-DB/recruiter_client
+[submodule "application_client"]
+	path = application_client
+	url = https://github.com/Moa-DB/application_client
