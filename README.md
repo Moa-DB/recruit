@@ -1,6 +1,6 @@
 # For developers
 
-This documentation is intended for developers who take over the development of this application. A description of use cases and requirements from the customer can be found in [this pdf][./application-description.pdf]. This readme gives a general overview over the development and the structure of the application. For more detailed documentation, refer to the submodules of this repository and the source code documentation, which is also extensive.
+This documentation is intended for developers who take over the development of this application. A description of use cases and requirements from the customer can be found in [this pdf](./application-description.pdf). This readme gives a general overview over the development and the structure of the application. For more detailed documentation, refer to the submodules of this repository and the source code documentation, which is also extensive.
 
 ## Structure
 This system for handling applications is divided into three parts, each running on its own cloud instance.
@@ -35,7 +35,7 @@ __presentation__ -> __application__ -> __repository__ -> __domain__
 
 A sample call to POST an application would thus go through these classes:
 
-[ApplicationController][recruitserver/src/main/java/se/moadb/recruitserver/presentation/ApplicationController.java] -> [ApplicationService][recruitserver/src/main/java/se/moadb/recruitserver/application/ApplicationService.java] -> [ApplicationRepository][recruitserver/src/main/java/se/moadb/recruitserver/repository/ApplicationRepository.java] -> [Application][recruitserver/src/main/java/se/moadb/recruitserver/domain/Application.java]
+[ApplicationController](recruitserver/src/main/java/se/moadb/recruitserver/presentation/ApplicationController.java) -> [ApplicationService](recruitserver/src/main/java/se/moadb/recruitserver/application/ApplicationService.java) -> [ApplicationRepository](recruitserver/src/main/java/se/moadb/recruitserver/repository/ApplicationRepository.java) -> [Application](recruitserver/src/main/java/se/moadb/recruitserver/domain/Application.java)
 
 and return the application as JSON data to the client.
       
