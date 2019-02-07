@@ -35,7 +35,7 @@ __presentation__ -> __application__ -> __repository__ -> __domain__
 
 A sample call to POST an application would thus go through these classes:
 
-[ApplicationController](recruitserver/src/main/java/se/moadb/recruitserver/presentation/ApplicationController.java) -> [ApplicationService](recruitserver/src/main/java/se/moadb/recruitserver/application/ApplicationService.java) -> [ApplicationRepository](recruitserver/src/main/java/se/moadb/recruitserver/repository/ApplicationRepository.java) -> [Application](recruitserver/src/main/java/se/moadb/recruitserver/domain/Application.java)
+[ApplicationController](./recruitserver/src/main/java/se/moadb/recruitserver/presentation/ApplicationController.java) -> [ApplicationService](./recruitserver/src/main/java/se/moadb/recruitserver/application/ApplicationService.java) -> [ApplicationRepository](./recruitserver/src/main/java/se/moadb/recruitserver/repository/ApplicationRepository.java) -> [Application](./recruitserver/src/main/java/se/moadb/recruitserver/domain/Application.java)
 
 and return the application as JSON data to the client.
       
