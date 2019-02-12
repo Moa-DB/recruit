@@ -16,16 +16,11 @@ This system for handling applications is divided into three parts, each running 
 
 _In short, this means that pushing code to the master branch (or merging code into it) will automatically build and deploy that part of the system which you are working on to Heroku._
 
-## Recruiter Client
-* A single-page web app in the React framework.
-
-__Anders fyller på__
-
-
-## Application Client
-* A single-page web app in the React framework.
-
-__Anders fyller på__
+## Application Client & Recruiter Client
+* The web apps has the overall same structure. They are both single-page web apps built with the React framework.
+* The apps consists of three main parts. A __header__, page __content__ and a __footer__. The header and footer are always the same and the content in between is different depending on which page is loaded.
+* The security and authentication process of the web app is handled server side via Spring Security. When a user is successfully authenticated we save this state in the frontend and the logged in user gets access to __restricted parts__. This is handled via React Router where we have defined a PrivateRoute component. If a user tries to access a restricted part of the site without being authenticated it will simply be redirected to the path __/login__ again.
+* We also need to think about Cross-Origin Resource Sharing (CORS). Since the web applications are separated from the backend server and may be run on different domains. Browsers will restrict cross origin HTTP requests that are initiated from within scripts, in our case the fetch calls to the API. React has a good solution for this and all we have to do is to define a proxy to the server in __package.json__.
 
 ## Server
 
